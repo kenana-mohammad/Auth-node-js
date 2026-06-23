@@ -39,13 +39,15 @@ app.use(notFound);
 app.use(errorHandler);
 
 const mongoose = require('mongoose');
-// mongoose.connect(MONGOOSE_URL).then(() => {
-app.listen(PORT, () => {
-    console.log(`the server is runnig == ${PORT}`);
+mongoose.connect(MONGOOSE_URL).then(() => {
+serverSelectionTimeoutMS: 5000, // زيادة وقت الانتظار لـ 5 ثواني
+  socketTimeoutMS: 45000, // إعدادات إضافية لاستقرار الاتصال
+    app.listen(PORT, () => {
+        console.log(`the server is runnig == ${PORT}`);
+
+    })
+
+}).catch((error) => {
+    console.log(error.message);
 
 })
-
-// }).catch((error) => {
-//     console.log(error.message);
-
-// })
