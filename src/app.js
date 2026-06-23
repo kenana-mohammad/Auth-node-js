@@ -39,13 +39,13 @@ app.use(notFound);
 app.use(errorHandler);
 
 const mongoose = require('mongoose');
-mongoose.connect(MONGOOSE_URL).then(() => {
-    app.listen(PORT, () => {
-        console.log(`the server is runnig == ${PORT}`);
-
-    })
-
-}).catch((error) => {
-    console.log(error.message);
+// mongoose.connect(MONGOOSE_URL).then(() => {
+app.listen(PORT, () => {
+    console.log(`the server is runnig == ${PORT}`);
 
 })
+
+// }).catch((error) => {
+//     console.log(error.message);
+
+// })
