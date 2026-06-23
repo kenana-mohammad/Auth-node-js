@@ -40,8 +40,7 @@ app.use(errorHandler);
 
 const mongoose = require('mongoose');
 mongoose.connect(MONGOOSE_URL).then(() => {
-serverSelectionTimeoutMS: 5000, // زيادة وقت الانتظار لـ 5 ثواني
-  socketTimeoutMS: 45000, // إعدادات إضافية لاستقرار الاتصال
+    serverSelectionTimeoutMS: 5000, // زيادة وقت الانتظار لـ 5 ثواني
     app.listen(PORT, () => {
         console.log(`the server is runnig == ${PORT}`);
 
