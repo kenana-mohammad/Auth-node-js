@@ -1,0 +1,50 @@
+//session 22
+//1-middlwarre auth if the ur is login
+//2-to send token automically usr cookie 
+npm i cookie-parser
+ to built service to use cookies
+///=====
+//Authorizaion
+ سيتم استخدام حقل الرول كمدوير مرقلو نوع الرول المسموجح صار لازم نستخدم مو الطريقة 
+ مدل وير العادية وانما hof بمرق الرول 
+ notes: auth before role [aute,role(['admin'])]
+ //==
+ //rate limiter
+ //=
+ //new session 24
+ //install to hashing argon2
+ //npm i argon2
+ {
+    hash,verify
+ }
+ //===xss npm i xss
+ //=============
+ *//validtor
+ npm i express-validator
+ //each route is file validate and each api arry
+ //cors
+ //=================
+ //seeder to create admin by the code
+ //refresh token genrate  bt time as longer than access and deferance to secert ket to security
+
+//bloced user if login  faild more than 5 
+  blocked: {
+        type: Boolean,
+        default: false
+    },
+    failedLoginAttempt: {
+        type: Number,
+        default: 0
+    },
+    lockedUntil: Date
+    //if faild register more 5 time is blocked
+    *//سجل 3 مرات خطا و مرة صح بترجع عدد مرات التسجيل الخاطى بتتصفر 
+    
+//================
+//25-upload file 
+to upload files used multer 
+npm i multer
+//to upload cloudinary 
+npm i cloudinary
+//26 example upload image and deploy node 
+

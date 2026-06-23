@@ -1,0 +1,17 @@
+Request => server => responser
+    //Server:
+Middleware
+router
+controller
+// db => schema validation
+//بدلا من الكتابة بال مجل validation كل راوت الو ملف
+// [body('email').isString().withMessage('the email must be string').isEmail().withMessage('email is not valid'),
+// body('name').isString().withMessage('the name must be string').isLength({ min: 2, max: 100 }).withMessage('the name must be between 2 and 100 characters'),
+// body('phone').isString().withMessage('the phone must be string').isMobilePhone().withMessage('the phone must be valid'),
+// body('password').isString().withMessage('the password must be string').isStrongPassword({
+//     minLength: 8,
+//     minLowercase: 2,
+//     minUppercase: 1,
+//     minNumbers: 1,
+//     minSymbols: 1
+// }).withMessage('the password must be a strong password'), validate]

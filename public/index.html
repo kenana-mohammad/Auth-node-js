@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshBite — Discover fresh meals, manage your account, and upload media seamlessly.">
+  <title>FreshBite — Food Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="#/" class="brand">
+          <span class="brand-icon">🍽</span>
+          <span class="brand-text">Fresh<span class="brand-accent">Bite</span></span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <a href="#/" class="nav-link" data-route="/">Home</a>
+          <a href="#/items" class="nav-link" data-route="/items">Menu</a>
+          <a href="#/users" class="nav-link nav-admin" data-route="/users">Users</a>
+          <a href="#/uploads" class="nav-link nav-admin" data-route="/uploads">Uploads</a>
+          <a href="#/profile" class="nav-link nav-auth" data-route="/profile">Profile</a>
+          <a href="#/login" class="nav-link nav-guest" data-route="/login">Sign In</a>
+          <a href="#/register" class="btn btn-sm btn-primary nav-guest" data-route="/register">Get Started</a>
+          <button class="btn btn-sm btn-outline nav-auth" id="logout-btn">Sign Out</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content"></main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-icon">🍽</span>
+          <strong>FreshBite</strong>
+          <p>Fresh food, delivered with care.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#/items">Menu</a>
+          <a href="#/users" class="nav-admin">Users</a>
+          <a href="#/uploads" class="nav-admin">Uploads</a>
+          <a href="#/profile" class="nav-auth">Account</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 FreshBite. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+  <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <h3 id="modal-title"></h3>
+        <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-footer" id="modal-footer"></div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
